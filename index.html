@@ -15,7 +15,7 @@
       .site-header { position: static; background: var(--color-brand-ink); color: var(--color-cream); }
       .menu-toggle { display: none; }
       .hero-stage { padding-top: 0; }
-      .hero-photo { height: clamp(360px, 62svh, 580px); }
+      .hero-photo { height: clamp(500px, 100svh, 900px); }
       @media (max-width: 960px) {
         .header-inner { flex-wrap: wrap; padding-block: 16px; }
         .primary-nav { display: flex; flex-wrap: wrap; width: 100%; gap: 8px 20px; margin-top: 12px; }
@@ -41,6 +41,7 @@
 
       <nav class="primary-nav" aria-label="Primary navigation">
         <a href="#top" data-nav="top" aria-current="location">Home</a>
+        <a href="menu.html" data-nav="menu">Menu</a>
         <a href="about.html" data-nav="about">About</a>
         <a href="#our-space" data-nav="our-space">Our Space</a>
         <a href="#location" data-nav="location">Location</a>
@@ -54,6 +55,7 @@
         </svg>
       </button>
     </div>
+    <span class="scroll-progress" aria-hidden="true"></span>
   </header>
 
   <div class="menu-panel" id="site-menu" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true" inert data-menu>
@@ -77,6 +79,7 @@
 
       <nav class="menu-nav" aria-label="Mobile navigation">
         <a href="#top" data-nav="top">Home</a>
+        <a href="menu.html" data-nav="menu">Menu</a>
         <a href="about.html" data-nav="about">About</a>
         <a href="#our-space" data-nav="our-space">Our Space</a>
         <a href="#location" data-nav="location">Location</a>
@@ -84,7 +87,7 @@
       </nav>
 
       <div class="menu-panel__foot">
-        <p>Ciracas, East Jakarta / Coffee and Space</p>
+        <p>Ciracas, East Jakarta / Open Daily 09:00 - 23:00</p>
         <p>Pre-launch prototype. Concept visuals and dummy WhatsApp numbers.</p>
       </div>
     </div>
@@ -106,7 +109,7 @@
 
       <div class="hero-intro">
         <div class="page-shell">
-          <div class="hero-intro__grid">
+          <div class="hero-intro__grid" data-reveal>
             <h1 class="hero-intro__title" id="hero-title">
               <span class="hero__title-mask"><span class="hero__title-word">NAKA.</span></span>
               <span class="hero-intro__sub">Coffee and Space</span>
@@ -114,16 +117,21 @@
 
             <div class="hero-intro__body">
               <p class="hero-intro__tagline">A place to connect and enjoy your moment.</p>
+              <p class="hero-intro__story">
+                A single-outlet coffee space in Ciracas shaped by fired terracotta walls, matte black steel framing,
+                poured concrete, and open-air tropical planting across indoor and courtyard seating.
+              </p>
               <div class="hero-intro__actions">
                 <a class="button button--primary" href="#our-space">Explore Our Space</a>
                 <a class="button button--ghost-dark" href="#location">Find Our Location</a>
+                <a class="text-link hero-intro__about-link" href="about.html">Read About NAKA</a>
               </div>
             </div>
           </div>
 
-          <div class="hero-intro__meta">
+          <div class="hero-intro__meta" data-reveal>
             <p class="prototype-note">Concept photography pending official NAKA shoot.</p>
-            <p class="hero__place">Ciracas, East Jakarta · Coffee and Space</p>
+            <p class="hero__place tabular-nums">Ciracas, East Jakarta · Open Daily 09:00 - 23:00</p>
           </div>
         </div>
       </div>
@@ -145,7 +153,7 @@
         </div>
 
         <div class="space-mosaic" data-space-grid>
-          <figure class="space-shot space-shot--wide" data-category="indoor" data-reveal>
+          <figure class="space-shot space-shot--wide" data-category="indoor" data-reveal="frame" style="--reveal-delay: 0ms;">
             <button
               class="space-shot__trigger"
               type="button"
@@ -170,7 +178,7 @@
             </figcaption>
           </figure>
 
-          <figure class="space-shot space-shot--tall" data-category="indoor" data-reveal>
+          <figure class="space-shot space-shot--tall" data-category="indoor" data-reveal="frame" style="--reveal-delay: 110ms;">
             <button
               class="space-shot__trigger"
               type="button"
@@ -195,7 +203,7 @@
             </figcaption>
           </figure>
 
-          <figure class="space-shot space-shot--full" data-category="outdoor" data-reveal>
+          <figure class="space-shot space-shot--full" data-category="outdoor" data-reveal="frame" style="--reveal-delay: 0ms;">
             <button
               class="space-shot__trigger"
               type="button"
@@ -220,7 +228,7 @@
             </figcaption>
           </figure>
 
-          <figure class="space-shot space-shot--half" data-category="outdoor" data-reveal>
+          <figure class="space-shot space-shot--half" data-category="outdoor" data-reveal="frame" style="--reveal-delay: 0ms;">
             <button
               class="space-shot__trigger"
               type="button"
@@ -245,7 +253,7 @@
             </figcaption>
           </figure>
 
-          <figure class="space-shot space-shot--half" data-category="outdoor" data-reveal>
+          <figure class="space-shot space-shot--half" data-category="outdoor" data-reveal="frame" style="--reveal-delay: 110ms;">
             <button
               class="space-shot__trigger"
               type="button"
@@ -277,31 +285,207 @@
       </div>
     </section>
 
-    <section class="section section--teaser" aria-labelledby="about-teaser-title">
+    <section class="section section--menu-preview" id="menu-preview" aria-labelledby="menu-preview-title">
       <div class="page-shell">
-        <div class="teaser-strip" data-reveal>
-          <div class="brand-plaque-col">
-            <div class="brand-plaque" role="img" aria-label="NAKA Coffee and Space official emblem and wordmark">
-              <svg class="brand-plaque__mark" viewBox="0 0 64.9 109.5" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M56.1 107.1C54.6 107.7 52.7 107.7 51.3 107.5C50 107.3 48.9 106.8 47.8 106C46.7 105.1 45.4 103.5 44.5 102.2C43.7 100.9 43.2 99.5 42.8 98C42.4 96.4 42.3 94.6 42.3 92.7C42.4 90.4 42.3 86.9 43 83.9C44.4 77.5 49.3 59.8 50.6 54C51 52.3 50.8 50.2 50.5 49.1C50.4 48.5 49.8 47.8 49.2 47.6C48.6 47.4 47.5 47.5 46.9 48C46 48.7 44.6 50.4 43.9 52C41.6 57.5 35.3 75 32.8 80.8C31.8 83.1 30.4 85.1 28.9 86.9C27.4 88.8 25.3 90.8 23.7 91.9C22.4 92.8 20.9 93.4 19.4 93.5C17.9 93.5 15.9 92.8 14.7 92C13.7 91.4 12.9 90.4 12.5 89.2C12 87.7 11.7 84.8 11.8 82.9C11.9 81.2 12.5 79.7 13 78C13.9 75.4 15.4 70.8 17 67.1C19.6 61.2 26.4 47.4 28.5 42.7C29.1 41.5 29.6 40.3 29.7 39C29.9 37.4 30.2 34.6 29.7 33C29.1 31.6 27.6 30.2 26.3 29.5C25.2 28.9 23.5 28.9 22.4 28.9C21.4 28.9 20.4 29.2 19.5 29.7C17.9 30.5 14.8 32.4 12.9 34.1C11.1 35.7 9.9 37.6 8.5 39.6C7.1 41.6 5.7 44.8 4.7 45.9C4.2 46.4 3 46.3 2.5 46.2C2.2 46.1 1.9 45.4 2.1 45.1C3.2 42.8 7.4 35.3 9.3 32.4C10.6 30.6 12.1 29.2 13.8 27.9C15.5 26.6 17.3 25.3 19.5 24.6C21.7 23.7 25.1 23.2 27.3 23C29 22.8 30.8 23 32.4 23.5C34 24 35.7 25 36.8 26C37.9 27.1 38.5 28.6 39 29.9C39.4 31.2 39.4 32.6 39.4 33.9C39.3 35.2 39.2 36.6 38.7 37.9C36.8 43.1 30 59.9 28.2 65.1C27.7 66.4 27.7 68 27.8 69C27.8 69.8 28.2 70.9 28.6 71.2C28.8 71.4 29.5 71.2 29.8 70.9C30.4 70.5 31.3 69.7 31.7 68.8C33.4 64.8 37.8 52.1 40.1 47.2C41.6 44 44.1 40.9 45.9 39C47.2 37.5 49.2 36.4 50.6 35.8C51.8 35.3 53.2 35.2 54.4 35.4C55.6 35.6 57 36.2 57.9 37C58.7 37.8 59.5 38.9 59.7 40.1C60 42.4 60.1 47.2 59.9 50.9C59.6 55.6 58.3 63.6 58.2 68C58.1 71.1 58.5 73.9 59.1 77C59.7 80.1 61.1 83.7 61.7 86.9C62.3 90 62.9 93.6 62.9 95.9C62.9 97.7 62.3 99.6 61.9 100.9C61.6 102 61.2 102.9 60.5 103.7C59.6 104.7 57.7 106.5 56.1 107.1Z M52.4 2.1C53.3 2.1 54.3 2.2 55.2 2.7C56.3 3.2 57.8 4.2 58.7 5.1C59.6 6 60.1 7 60.5 8.1C60.9 9.3 60.9 11 60.9 12C60.9 12.6 60.9 13.3 60.7 13.9C60.4 14.8 59.9 16.2 59.1 17.2C58.3 18.2 57.2 19.3 56 20C54.9 20.7 53.4 21.3 52.4 21.5C51.5 21.6 50.6 21.4 49.9 21C49 20.5 47.9 19.5 47.3 18.5C46.7 17.3 46.4 14.9 46.3 13.8C46.2 13.1 46.2 12.5 46.5 11.9C47 10.9 48.2 8.7 49 8C49.6 7.5 50.7 7.5 51.4 7.4C52 7.4 52.7 7.4 53.2 7.8C53.8 8.4 55.3 10 55.5 11.1C55.7 12.3 55 13.8 54.5 14.6C54 15.4 52.8 16.1 52.2 16.3C51.8 16.4 51.3 16.1 51 15.9C50.6 15.6 50.2 15.2 50.1 14.8C49.9 14.3 49.8 13.4 50 13.1C50.2 12.8 50.8 12.6 51.2 12.7C51.6 12.7 52.1 13.3 52.4 13.2C52.7 13.1 53.1 12.4 53.1 12C53 11.5 52.8 10.7 52.3 10.4C51.9 10.2 50.8 10.2 50.3 10.4C49.9 10.5 49.4 10.7 49.1 11.1C48.8 11.7 48.3 13.3 48.2 14C48.1 14.6 48.1 15.1 48.3 15.6C48.5 16.2 48.8 17 49.3 17.6C49.8 18.1 50.6 18.7 51.3 18.7C52.4 18.8 54.5 18.2 55.5 17.6C56.3 17.2 57.1 16.5 57.4 15.7C57.9 14.6 58.4 12.3 58.5 11.1C58.5 10 57.9 8.9 57.6 8.1C57.3 7.5 56.9 6.9 56.3 6.4C55.6 5.8 54.2 4.9 53.3 4.7C52.5 4.4 51.5 4.5 50.7 4.9C49.6 5.5 47.4 7.2 46.4 8.5C45.4 9.7 44.9 11.9 44.4 12.7C44.3 13 43.7 13.3 43.5 13.1C43.2 13 42.9 12.4 42.8 12C42.7 11.5 42.7 10.7 43 10C43.5 8.9 44.9 6.3 46 5.1C46.9 4 48.5 3.2 49.5 2.7C50.4 2.3 51.4 2.1 52.4 2.1Z M43.2 17.4C44 17.4 44.7 18 44.7 18.8C44.7 19.6 44 20.3 43.2 20.3C42.4 20.3 41.7 19.6 41.7 18.8C41.7 18 42.4 17.4 43.2 17.4Z"/>
-              </svg>
-              <span class="brand-plaque__wordmark">NAKA COFFEE &amp; SPACE</span>
-            </div>
+        <div class="menu-preview-head" data-reveal>
+          <div class="menu-preview-head__copy">
+            <h2 id="menu-preview-title">On the Menu</h2>
+            <p class="menu-preview-head__sub">
+              Coffee, signature cold brew, snacks, Nusantara classics, donburi, and ramen served daily from <span class="tabular-nums">09:00</span> to <span class="tabular-nums">23:00</span>.
+            </p>
+          </div>
+          <a class="button button--primary" href="menu.html">Explore Full Menu</a>
+        </div>
 
-            <div class="teaser-swatches" aria-hidden="true">
-              <span class="teaser-swatch teaser-swatch--terracotta"><span>Terracotta</span></span>
-              <span class="teaser-swatch teaser-swatch--steel"><span>Steel</span></span>
-              <span class="teaser-swatch teaser-swatch--concrete"><span>Concrete</span></span>
-              <span class="teaser-swatch teaser-swatch--olive"><span>Greenery</span></span>
+        <div class="menu-preview-grid">
+          <article class="menu-preview-pillar" data-reveal="frame" style="--reveal-delay: 0ms;">
+            <a class="menu-preview-pillar__specimen" href="menu.html?category=signature" aria-label="Browse Coffee and Cold Brew on the full menu">
+              <img
+                src="assets/images/menu-signature.png"
+                width="722"
+                height="572"
+                decoding="async"
+                alt="Eight NAKA signature iced coffee drinks arranged on stone tiers."
+              >
+            </a>
+            <div class="menu-preview-pillar__body">
+              <h3 class="menu-preview-pillar__title">Coffee &amp; Cold Brew</h3>
+              <ul class="menu-preview-list">
+                <li>
+                  <span>Naka Signature</span>
+                  <span class="menu-preview-list__price">27K</span>
+                </li>
+                <li>
+                  <span>Monday Cold Brew</span>
+                  <span class="menu-preview-list__price">29K</span>
+                </li>
+                <li>
+                  <span>Avocado Coffee</span>
+                  <span class="menu-preview-list__price">29K</span>
+                </li>
+                <li>
+                  <span>Matcha</span>
+                  <span class="menu-preview-list__price">25 / 27K</span>
+                </li>
+              </ul>
+              <a class="text-link menu-preview-pillar__link" href="menu.html?category=signature">Browse Coffee &amp; Drinks</a>
+            </div>
+          </article>
+
+          <article class="menu-preview-pillar" data-reveal="frame" style="--reveal-delay: 90ms;">
+            <a class="menu-preview-pillar__specimen" href="menu.html?category=snacks" aria-label="Browse Snacks and Sharing on the full menu">
+              <img
+                src="assets/images/menu-snacks.png"
+                width="636"
+                height="824"
+                decoding="async"
+                alt="Four NAKA snack bowls and trays including corn ribs, yakitori, tori kawa, and sharing platter."
+              >
+            </a>
+            <div class="menu-preview-pillar__body">
+              <h3 class="menu-preview-pillar__title">Snacks &amp; Sharing</h3>
+              <ul class="menu-preview-list">
+                <li>
+                  <span>Naka Platter</span>
+                  <span class="menu-preview-list__price">35K</span>
+                </li>
+                <li>
+                  <span>Corn Ribs</span>
+                  <span class="menu-preview-list__price">25K</span>
+                </li>
+                <li>
+                  <span>Yakitori</span>
+                  <span class="menu-preview-list__price">27K</span>
+                </li>
+                <li>
+                  <span>Takoyaki</span>
+                  <span class="menu-preview-list__price">25K</span>
+                </li>
+              </ul>
+              <a class="text-link menu-preview-pillar__link" href="menu.html?category=snacks">Browse All Snacks</a>
+            </div>
+          </article>
+
+          <article class="menu-preview-pillar" data-reveal="frame" style="--reveal-delay: 180ms;">
+            <a class="menu-preview-pillar__specimen" href="menu.html?category=ramen" aria-label="Browse Warm Kitchen dishes on the full menu">
+              <img
+                src="assets/images/menu-ramen.png"
+                width="1045"
+                height="492"
+                decoding="async"
+                alt="Three NAKA ramen bowls served hot with toppings and rich broth."
+              >
+            </a>
+            <div class="menu-preview-pillar__body">
+              <h3 class="menu-preview-pillar__title">Warm Kitchen</h3>
+              <ul class="menu-preview-list">
+                <li>
+                  <span>Tori Ramen</span>
+                  <span class="menu-preview-list__price">40K</span>
+                </li>
+                <li>
+                  <span>Kuro Gyudon</span>
+                  <span class="menu-preview-list__price">37K</span>
+                </li>
+                <li>
+                  <span>Chili Padi Rice</span>
+                  <span class="menu-preview-list__price">37K</span>
+                </li>
+                <li>
+                  <span>Nasi Goreng Naka</span>
+                  <span class="menu-preview-list__price">30K</span>
+                </li>
+              </ul>
+              <a class="text-link menu-preview-pillar__link" href="menu.html?category=ramen">Browse Kitchen Bowls</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--visit" id="visit-info" aria-labelledby="visit-title">
+      <div class="page-shell">
+        <div class="visit-layout">
+          <div class="visit-intro" data-reveal>
+            <h2 id="visit-title">Plan Your Visit</h2>
+            <p class="visit-intro__text">
+              One dedicated outlet in Ciracas designed for morning coffee, focused work sessions, and unhurried evening
+              meals with indoor comfort and open-air courtyard seating.
+            </p>
+
+            <dl class="visit-summary">
+              <div>
+                <dt>Opening Hours</dt>
+                <dd class="tabular-nums">Open Daily, 09:00 - 23:00</dd>
+              </div>
+              <div>
+                <dt>Outlet</dt>
+                <dd>Single Location · Ciracas, East Jakarta</dd>
+              </div>
+            </dl>
+
+            <div class="visit-intro__actions">
+              <a class="button button--on-brand" href="#location">See Location &amp; Map</a>
+              <a class="text-link text-link--on-brand" href="#contact">Ask on WhatsApp</a>
             </div>
           </div>
 
-          <div class="teaser-copy">
-            <h2 id="about-teaser-title">Built from clay, steel, and open air.</h2>
-            <p class="teaser-copy__text">
-              NAKA pairs fired terracotta walls, matte black steel framing, poured concrete, and open-air tropical planting across indoor and courtyard seating.
-            </p>
-            <a class="button button--on-brand" href="about.html">Read About NAKA</a>
+          <div class="visit-facilities">
+            <h3 class="visit-facilities__heading" id="facilities-title" data-reveal>Outlet Facilities</h3>
+            <ul class="facility-ledger" aria-labelledby="facilities-title">
+              <li class="facility-item" data-reveal="ledger" style="--reveal-delay: 0ms;">
+                <svg class="facility-item__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3.5" y="4.5" width="17" height="15" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M12 4.5v15M7 9.5h2M15 9.5h2M15 13.5h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+                </svg>
+                <div class="facility-item__body">
+                  <span class="facility-item__title">Indoor AC &amp; Open-Air Courtyard</span>
+                  <span class="facility-item__desc">Air-conditioned coffee bar inside paired with shaded outdoor courtyard tables.</span>
+                </div>
+              </li>
+
+              <li class="facility-item" data-reveal="ledger" style="--reveal-delay: 65ms;">
+                <svg class="facility-item__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M3.5 9.5a12 12 0 0 1 17 0M6.8 13a7.4 7.4 0 0 1 10.4 0M10.2 16.4a2.6 2.6 0 0 1 3.6 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+                  <circle cx="12" cy="19.5" r="1.15" fill="currentColor"/>
+                </svg>
+                <div class="facility-item__body">
+                  <span class="facility-item__title">Free Wi-Fi &amp; Power Outlets</span>
+                  <span class="facility-item__desc">Complimentary Wi-Fi and accessible power outlets suited for remote work and study.</span>
+                </div>
+              </li>
+
+              <li class="facility-item" data-reveal="ledger" style="--reveal-delay: 130ms;">
+                <svg class="facility-item__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 8.5h10.5a2.5 2.5 0 1 0-2.5-2.5M4 12.5h14.5a2 2 0 1 1-2 2M4 16.5h8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+                </svg>
+                <div class="facility-item__body">
+                  <span class="facility-item__title">Smoking &amp; Non-Smoking Areas</span>
+                  <span class="facility-item__desc">Dedicated non-smoking indoor room with open-air smoking seating outside.</span>
+                </div>
+              </li>
+
+              <li class="facility-item" data-reveal="ledger" style="--reveal-delay: 195ms;">
+                <svg class="facility-item__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6.5 20V11.5a5.5 5.5 0 0 1 11 0V20M3.5 20h17M12 6V3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+                </svg>
+                <div class="facility-item__body">
+                  <span class="facility-item__title">Prayer Room (Mushola)</span>
+                  <span class="facility-item__desc">Quiet on-site mushola available for guests throughout opening hours.</span>
+                </div>
+              </li>
+
+              <li class="facility-item" data-reveal="ledger" style="--reveal-delay: 260ms;">
+                <svg class="facility-item__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M9.5 16V8h3.4a2.6 2.6 0 0 1 0 5.2H9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+                </svg>
+                <div class="facility-item__body">
+                  <span class="facility-item__title">Parking Area</span>
+                  <span class="facility-item__desc">On-site parking available for both motorcycles and cars.</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -310,21 +494,25 @@
     <section class="section section--location" id="location" aria-labelledby="location-title">
       <div class="page-shell">
         <div class="location-layout">
-          <div class="location-copy" data-reveal>
-            <header class="section-heading">
+          <div class="location-copy">
+            <header class="section-heading" data-reveal>
               <h2 id="location-title">Find Us</h2>
             </header>
 
             <dl class="location-details">
-              <div>
+              <div data-reveal="ledger" style="--reveal-delay: 0ms;">
                 <dt>Area</dt>
                 <dd>Ciracas, East Jakarta</dd>
               </div>
-              <div>
+              <div data-reveal="ledger" style="--reveal-delay: 60ms;">
+                <dt>Open Hours</dt>
+                <dd class="tabular-nums">Daily, 09:00 - 23:00</dd>
+              </div>
+              <div data-reveal="ledger" style="--reveal-delay: 120ms;">
                 <dt>Address</dt>
                 <dd>Jl. Pengantin Ali No. 55, RT.4/RW.6, Ciracas, East Jakarta, DKI Jakarta 13740</dd>
               </div>
-              <div>
+              <div data-reveal="ledger" style="--reveal-delay: 180ms;">
                 <dt>Directions</dt>
                 <dd>NAKA Coffee &amp; Space on Google Maps</dd>
               </div>
@@ -335,12 +523,14 @@
               href="https://maps.app.goo.gl/RC8scp3rpt9zcupy8"
               target="_blank"
               rel="noopener noreferrer"
+              data-reveal
+              style="--reveal-delay: 180ms;"
             >
               Get Directions
             </a>
           </div>
 
-          <div class="map-panel" data-reveal>
+          <div class="map-panel" data-reveal="frame">
             <div class="map-panel__frame map-panel__frame--embed">
               <iframe
                 class="map-panel__embed"
@@ -395,6 +585,7 @@
           <h2 class="footer-col__title" id="footer-explore-title">Explore</h2>
           <nav class="footer-nav" aria-labelledby="footer-explore-title">
             <a href="#top" aria-current="page">Home</a>
+            <a href="menu.html">Menu</a>
             <a href="about.html">About</a>
             <a href="#our-space">Our Space</a>
             <a href="#location">Location</a>

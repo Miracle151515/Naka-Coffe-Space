@@ -41,6 +41,7 @@
 
       <nav class="primary-nav" aria-label="Primary navigation">
         <a href="index.html" data-nav="top">Home</a>
+        <a href="menu.html" data-nav="menu">Menu</a>
         <a href="about.html" data-nav="about" aria-current="page">About</a>
         <a href="index.html#our-space" data-nav="our-space">Our Space</a>
         <a href="index.html#location" data-nav="location">Location</a>
@@ -54,6 +55,7 @@
         </svg>
       </button>
     </div>
+    <span class="scroll-progress" aria-hidden="true"></span>
   </header>
 
   <div class="menu-panel" id="site-menu" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true" inert data-menu>
@@ -77,6 +79,7 @@
 
       <nav class="menu-nav" aria-label="Mobile navigation">
         <a href="index.html" data-nav="top">Home</a>
+        <a href="menu.html" data-nav="menu">Menu</a>
         <a href="about.html" data-nav="about" aria-current="page">About</a>
         <a href="index.html#our-space" data-nav="our-space">Our Space</a>
         <a href="index.html#location" data-nav="location">Location</a>
@@ -84,7 +87,7 @@
       </nav>
 
       <div class="menu-panel__foot">
-        <p>Ciracas, East Jakarta / Coffee and Space</p>
+        <p>Ciracas, East Jakarta / Open Daily 09:00 - 23:00</p>
         <p>Pre-launch prototype. Concept visuals and dummy WhatsApp numbers.</p>
       </div>
     </div>
@@ -123,6 +126,7 @@
                 Official business story and brand copy will replace this introduction once approved by NAKA.
               </p>
               <div class="about-intro__actions">
+                <a class="text-link" href="menu.html">Browse Our Menu</a>
                 <a class="text-link" href="index.html#our-space">Explore Our Space</a>
                 <a class="text-link" href="index.html#location">Find Our Location</a>
               </div>
@@ -148,26 +152,26 @@
           </div>
         </div>
 
-        <div class="material-band" data-reveal>
-          <div class="material material--terracotta">
+        <div class="material-band">
+          <div class="material material--terracotta" data-reveal="ledger" style="--reveal-delay: 0ms;">
             <div class="material__tag">
               <span class="material__name">Terracotta</span>
               <span class="material__note">Exterior &amp; feature wall</span>
             </div>
           </div>
-          <div class="material material--steel">
+          <div class="material material--steel" data-reveal="ledger" style="--reveal-delay: 60ms;">
             <div class="material__tag">
               <span class="material__name">Black Steel</span>
               <span class="material__note">Structural frame &amp; canopy</span>
             </div>
           </div>
-          <div class="material material--concrete">
+          <div class="material material--concrete" data-reveal="ledger" style="--reveal-delay: 120ms;">
             <div class="material__tag">
               <span class="material__name">Concrete</span>
               <span class="material__note">Floor, bar &amp; paving</span>
             </div>
           </div>
-          <div class="material material--olive">
+          <div class="material material--olive" data-reveal="ledger" style="--reveal-delay: 180ms;">
             <div class="material__tag">
               <span class="material__name">Greenery</span>
               <span class="material__note">Courtyard planting</span>
@@ -180,7 +184,7 @@
     <section class="section section--courtyard-story" aria-labelledby="courtyard-title">
       <div class="page-shell">
         <div class="courtyard-split">
-          <figure class="courtyard-split__media" data-reveal>
+          <figure class="courtyard-split__media" data-reveal="frame">
             <img
               src="assets/images/space-communal-table.jpg"
               width="1200"
@@ -247,6 +251,7 @@
           <h2 class="footer-col__title" id="footer-explore-title">Explore</h2>
           <nav class="footer-nav" aria-labelledby="footer-explore-title">
             <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
             <a href="about.html" aria-current="page">About</a>
             <a href="index.html#our-space">Our Space</a>
             <a href="index.html#location">Location</a>
