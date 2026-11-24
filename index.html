@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NAKA Coffee and Space, an Indonesian coffee shop shaped by terracotta walls, black steel, concrete, and open-air greenery.">
+  <meta name="theme-color" content="#8C3B00">
+  <title>NAKA Coffee and Space</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script>document.documentElement.classList.add('has-js');</script>
+  <link rel="preload" href="assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <noscript>
+    <style>
+      .site-header { position: static; background: var(--color-brand-ink); color: var(--color-cream); }
+      .menu-toggle { display: none; }
+      .hero-stage { padding-top: 0; }
+      .hero-photo { height: clamp(360px, 62svh, 580px); }
+      @media (max-width: 960px) {
+        .header-inner { flex-wrap: wrap; padding-block: 16px; }
+        .primary-nav { display: flex; flex-wrap: wrap; width: 100%; gap: 8px 20px; margin-top: 12px; }
+        .primary-nav a { font-size: 0.82rem; }
+      }
+    </style>
+  </noscript>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="header-inner page-shell">
+      <a class="brand" href="#top" aria-label="NAKA Coffee and Space, back to top">
+        <svg class="brand__mark" viewBox="0 0 64.9 109.5" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M56.1 107.1C54.6 107.7 52.7 107.7 51.3 107.5C50 107.3 48.9 106.8 47.8 106C46.7 105.1 45.4 103.5 44.5 102.2C43.7 100.9 43.2 99.5 42.8 98C42.4 96.4 42.3 94.6 42.3 92.7C42.4 90.4 42.3 86.9 43 83.9C44.4 77.5 49.3 59.8 50.6 54C51 52.3 50.8 50.2 50.5 49.1C50.4 48.5 49.8 47.8 49.2 47.6C48.6 47.4 47.5 47.5 46.9 48C46 48.7 44.6 50.4 43.9 52C41.6 57.5 35.3 75 32.8 80.8C31.8 83.1 30.4 85.1 28.9 86.9C27.4 88.8 25.3 90.8 23.7 91.9C22.4 92.8 20.9 93.4 19.4 93.5C17.9 93.5 15.9 92.8 14.7 92C13.7 91.4 12.9 90.4 12.5 89.2C12 87.7 11.7 84.8 11.8 82.9C11.9 81.2 12.5 79.7 13 78C13.9 75.4 15.4 70.8 17 67.1C19.6 61.2 26.4 47.4 28.5 42.7C29.1 41.5 29.6 40.3 29.7 39C29.9 37.4 30.2 34.6 29.7 33C29.1 31.6 27.6 30.2 26.3 29.5C25.2 28.9 23.5 28.9 22.4 28.9C21.4 28.9 20.4 29.2 19.5 29.7C17.9 30.5 14.8 32.4 12.9 34.1C11.1 35.7 9.9 37.6 8.5 39.6C7.1 41.6 5.7 44.8 4.7 45.9C4.2 46.4 3 46.3 2.5 46.2C2.2 46.1 1.9 45.4 2.1 45.1C3.2 42.8 7.4 35.3 9.3 32.4C10.6 30.6 12.1 29.2 13.8 27.9C15.5 26.6 17.3 25.3 19.5 24.6C21.7 23.7 25.1 23.2 27.3 23C29 22.8 30.8 23 32.4 23.5C34 24 35.7 25 36.8 26C37.9 27.1 38.5 28.6 39 29.9C39.4 31.2 39.4 32.6 39.4 33.9C39.3 35.2 39.2 36.6 38.7 37.9C36.8 43.1 30 59.9 28.2 65.1C27.7 66.4 27.7 68 27.8 69C27.8 69.8 28.2 70.9 28.6 71.2C28.8 71.4 29.5 71.2 29.8 70.9C30.4 70.5 31.3 69.7 31.7 68.8C33.4 64.8 37.8 52.1 40.1 47.2C41.6 44 44.1 40.9 45.9 39C47.2 37.5 49.2 36.4 50.6 35.8C51.8 35.3 53.2 35.2 54.4 35.4C55.6 35.6 57 36.2 57.9 37C58.7 37.8 59.5 38.9 59.7 40.1C60 42.4 60.1 47.2 59.9 50.9C59.6 55.6 58.3 63.6 58.2 68C58.1 71.1 58.5 73.9 59.1 77C59.7 80.1 61.1 83.7 61.7 86.9C62.3 90 62.9 93.6 62.9 95.9C62.9 97.7 62.3 99.6 61.9 100.9C61.6 102 61.2 102.9 60.5 103.7C59.6 104.7 57.7 106.5 56.1 107.1Z M52.4 2.1C53.3 2.1 54.3 2.2 55.2 2.7C56.3 3.2 57.8 4.2 58.7 5.1C59.6 6 60.1 7 60.5 8.1C60.9 9.3 60.9 11 60.9 12C60.9 12.6 60.9 13.3 60.7 13.9C60.4 14.8 59.9 16.2 59.1 17.2C58.3 18.2 57.2 19.3 56 20C54.9 20.7 53.4 21.3 52.4 21.5C51.5 21.6 50.6 21.4 49.9 21C49 20.5 47.9 19.5 47.3 18.5C46.7 17.3 46.4 14.9 46.3 13.8C46.2 13.1 46.2 12.5 46.5 11.9C47 10.9 48.2 8.7 49 8C49.6 7.5 50.7 7.5 51.4 7.4C52 7.4 52.7 7.4 53.2 7.8C53.8 8.4 55.3 10 55.5 11.1C55.7 12.3 55 13.8 54.5 14.6C54 15.4 52.8 16.1 52.2 16.3C51.8 16.4 51.3 16.1 51 15.9C50.6 15.6 50.2 15.2 50.1 14.8C49.9 14.3 49.8 13.4 50 13.1C50.2 12.8 50.8 12.6 51.2 12.7C51.6 12.7 52.1 13.3 52.4 13.2C52.7 13.1 53.1 12.4 53.1 12C53 11.5 52.8 10.7 52.3 10.4C51.9 10.2 50.8 10.2 50.3 10.4C49.9 10.5 49.4 10.7 49.1 11.1C48.8 11.7 48.3 13.3 48.2 14C48.1 14.6 48.1 15.1 48.3 15.6C48.5 16.2 48.8 17 49.3 17.6C49.8 18.1 50.6 18.7 51.3 18.7C52.4 18.8 54.5 18.2 55.5 17.6C56.3 17.2 57.1 16.5 57.4 15.7C57.9 14.6 58.4 12.3 58.5 11.1C58.5 10 57.9 8.9 57.6 8.1C57.3 7.5 56.9 6.9 56.3 6.4C55.6 5.8 54.2 4.9 53.3 4.7C52.5 4.4 51.5 4.5 50.7 4.9C49.6 5.5 47.4 7.2 46.4 8.5C45.4 9.7 44.9 11.9 44.4 12.7C44.3 13 43.7 13.3 43.5 13.1C43.2 13 42.9 12.4 42.8 12C42.7 11.5 42.7 10.7 43 10C43.5 8.9 44.9 6.3 46 5.1C46.9 4 48.5 3.2 49.5 2.7C50.4 2.3 51.4 2.1 52.4 2.1Z M43.2 17.4C44 17.4 44.7 18 44.7 18.8C44.7 19.6 44 20.3 43.2 20.3C42.4 20.3 41.7 19.6 41.7 18.8C41.7 18 42.4 17.4 43.2 17.4Z"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__word">NAKA</span>
+          <span class="brand__descriptor">Coffee &amp; Space</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#top" data-nav="top" aria-current="location">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="#our-space" data-nav="our-space">Our Space</a>
+        <a href="#location" data-nav="location">Location</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+        <span class="menu-toggle__label">Menu</span>
+        <svg class="menu-toggle__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M3 6.5h14M3 13.5h14" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-panel" id="site-menu" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true" inert data-menu>
+    <div class="menu-panel__inner page-shell">
+      <div class="menu-panel__head">
+        <a class="brand brand--menu" href="#top" aria-label="NAKA Coffee and Space, back to top">
+          <svg class="brand__mark" viewBox="0 0 64.9 109.5" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M56.1 107.1C54.6 107.7 52.7 107.7 51.3 107.5C50 107.3 48.9 106.8 47.8 106C46.7 105.1 45.4 103.5 44.5 102.2C43.7 100.9 43.2 99.5 42.8 98C42.4 96.4 42.3 94.6 42.3 92.7C42.4 90.4 42.3 86.9 43 83.9C44.4 77.5 49.3 59.8 50.6 54C51 52.3 50.8 50.2 50.5 49.1C50.4 48.5 49.8 47.8 49.2 47.6C48.6 47.4 47.5 47.5 46.9 48C46 48.7 44.6 50.4 43.9 52C41.6 57.5 35.3 75 32.8 80.8C31.8 83.1 30.4 85.1 28.9 86.9C27.4 88.8 25.3 90.8 23.7 91.9C22.4 92.8 20.9 93.4 19.4 93.5C17.9 93.5 15.9 92.8 14.7 92C13.7 91.4 12.9 90.4 12.5 89.2C12 87.7 11.7 84.8 11.8 82.9C11.9 81.2 12.5 79.7 13 78C13.9 75.4 15.4 70.8 17 67.1C19.6 61.2 26.4 47.4 28.5 42.7C29.1 41.5 29.6 40.3 29.7 39C29.9 37.4 30.2 34.6 29.7 33C29.1 31.6 27.6 30.2 26.3 29.5C25.2 28.9 23.5 28.9 22.4 28.9C21.4 28.9 20.4 29.2 19.5 29.7C17.9 30.5 14.8 32.4 12.9 34.1C11.1 35.7 9.9 37.6 8.5 39.6C7.1 41.6 5.7 44.8 4.7 45.9C4.2 46.4 3 46.3 2.5 46.2C2.2 46.1 1.9 45.4 2.1 45.1C3.2 42.8 7.4 35.3 9.3 32.4C10.6 30.6 12.1 29.2 13.8 27.9C15.5 26.6 17.3 25.3 19.5 24.6C21.7 23.7 25.1 23.2 27.3 23C29 22.8 30.8 23 32.4 23.5C34 24 35.7 25 36.8 26C37.9 27.1 38.5 28.6 39 29.9C39.4 31.2 39.4 32.6 39.4 33.9C39.3 35.2 39.2 36.6 38.7 37.9C36.8 43.1 30 59.9 28.2 65.1C27.7 66.4 27.7 68 27.8 69C27.8 69.8 28.2 70.9 28.6 71.2C28.8 71.4 29.5 71.2 29.8 70.9C30.4 70.5 31.3 69.7 31.7 68.8C33.4 64.8 37.8 52.1 40.1 47.2C41.6 44 44.1 40.9 45.9 39C47.2 37.5 49.2 36.4 50.6 35.8C51.8 35.3 53.2 35.2 54.4 35.4C55.6 35.6 57 36.2 57.9 37C58.7 37.8 59.5 38.9 59.7 40.1C60 42.4 60.1 47.2 59.9 50.9C59.6 55.6 58.3 63.6 58.2 68C58.1 71.1 58.5 73.9 59.1 77C59.7 80.1 61.1 83.7 61.7 86.9C62.3 90 62.9 93.6 62.9 95.9C62.9 97.7 62.3 99.6 61.9 100.9C61.6 102 61.2 102.9 60.5 103.7C59.6 104.7 57.7 106.5 56.1 107.1Z M52.4 2.1C53.3 2.1 54.3 2.2 55.2 2.7C56.3 3.2 57.8 4.2 58.7 5.1C59.6 6 60.1 7 60.5 8.1C60.9 9.3 60.9 11 60.9 12C60.9 12.6 60.9 13.3 60.7 13.9C60.4 14.8 59.9 16.2 59.1 17.2C58.3 18.2 57.2 19.3 56 20C54.9 20.7 53.4 21.3 52.4 21.5C51.5 21.6 50.6 21.4 49.9 21C49 20.5 47.9 19.5 47.3 18.5C46.7 17.3 46.4 14.9 46.3 13.8C46.2 13.1 46.2 12.5 46.5 11.9C47 10.9 48.2 8.7 49 8C49.6 7.5 50.7 7.5 51.4 7.4C52 7.4 52.7 7.4 53.2 7.8C53.8 8.4 55.3 10 55.5 11.1C55.7 12.3 55 13.8 54.5 14.6C54 15.4 52.8 16.1 52.2 16.3C51.8 16.4 51.3 16.1 51 15.9C50.6 15.6 50.2 15.2 50.1 14.8C49.9 14.3 49.8 13.4 50 13.1C50.2 12.8 50.8 12.6 51.2 12.7C51.6 12.7 52.1 13.3 52.4 13.2C52.7 13.1 53.1 12.4 53.1 12C53 11.5 52.8 10.7 52.3 10.4C51.9 10.2 50.8 10.2 50.3 10.4C49.9 10.5 49.4 10.7 49.1 11.1C48.8 11.7 48.3 13.3 48.2 14C48.1 14.6 48.1 15.1 48.3 15.6C48.5 16.2 48.8 17 49.3 17.6C49.8 18.1 50.6 18.7 51.3 18.7C52.4 18.8 54.5 18.2 55.5 17.6C56.3 17.2 57.1 16.5 57.4 15.7C57.9 14.6 58.4 12.3 58.5 11.1C58.5 10 57.9 8.9 57.6 8.1C57.3 7.5 56.9 6.9 56.3 6.4C55.6 5.8 54.2 4.9 53.3 4.7C52.5 4.4 51.5 4.5 50.7 4.9C49.6 5.5 47.4 7.2 46.4 8.5C45.4 9.7 44.9 11.9 44.4 12.7C44.3 13 43.7 13.3 43.5 13.1C43.2 13 42.9 12.4 42.8 12C42.7 11.5 42.7 10.7 43 10C43.5 8.9 44.9 6.3 46 5.1C46.9 4 48.5 3.2 49.5 2.7C50.4 2.3 51.4 2.1 52.4 2.1Z M43.2 17.4C44 17.4 44.7 18 44.7 18.8C44.7 19.6 44 20.3 43.2 20.3C42.4 20.3 41.7 19.6 41.7 18.8C41.7 18 42.4 17.4 43.2 17.4Z"/>
+          </svg>
+          <span class="brand__text">
+            <span class="brand__word">NAKA</span>
+            <span class="brand__descriptor">Coffee &amp; Space</span>
+          </span>
+        </a>
+        <button class="menu-close" type="button" aria-label="Close menu" data-menu-close>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M5 5l12 12M17 5L5 17" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="menu-nav" aria-label="Mobile navigation">
+        <a href="#top" data-nav="top">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="#our-space" data-nav="our-space">Our Space</a>
+        <a href="#location" data-nav="location">Location</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="menu-panel__foot">
+        <p>Ciracas, East Jakarta / Coffee and Space</p>
+        <p>Pre-launch prototype. Concept visuals and dummy WhatsApp numbers.</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <section class="hero-stage" id="top" aria-labelledby="hero-title">
+      <div class="hero-photo">
+        <img
+          class="hero-photo__img"
+          src="assets/images/hero-atmosphere.jpg"
+          width="1376"
+          height="768"
+          fetchpriority="high"
+          decoding="async"
+          alt="Concept architectural view of NAKA Coffee and Space showing the concrete bar, terracotta wall, black steel framing, and open-air courtyard greenery."
+        >
+      </div>
+
+      <div class="hero-intro">
+        <div class="page-shell">
+          <div class="hero-intro__grid">
+            <h1 class="hero-intro__title" id="hero-title">
+              <span class="hero__title-mask"><span class="hero__title-word">NAKA.</span></span>
+              <span class="hero-intro__sub">Coffee and Space</span>
+            </h1>
+
+            <div class="hero-intro__body">
+              <p class="hero-intro__tagline">A place to connect and enjoy your moment.</p>
+              <div class="hero-intro__actions">
+                <a class="button button--primary" href="#our-space">Explore Our Space</a>
+                <a class="button button--ghost-dark" href="#location">Find Our Location</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-intro__meta">
+            <p class="prototype-note">Concept photography pending official NAKA shoot.</p>
+            <p class="hero__place">Ciracas, East Jakarta · Coffee and Space</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--space" id="our-space" aria-labelledby="space-title">
+      <div class="page-shell">
+        <div class="space-bar" data-reveal>
+          <div class="space-bar__title">
+            <h2 id="space-title">Our Space</h2>
+            <p class="space-bar__sub">Inside the bar and out in the courtyard.</p>
+          </div>
+
+          <div class="space-filters" role="group" aria-label="Filter space photos">
+            <button class="space-filter is-active" type="button" data-space-filter="all" aria-pressed="true">All</button>
+            <button class="space-filter" type="button" data-space-filter="indoor" aria-pressed="false">Indoor</button>
+            <button class="space-filter" type="button" data-space-filter="outdoor" aria-pressed="false">Outdoor</button>
+          </div>
+        </div>
+
+        <div class="space-mosaic" data-space-grid>
+          <figure class="space-shot space-shot--wide" data-category="indoor" data-reveal>
+            <button
+              class="space-shot__trigger"
+              type="button"
+              data-lightbox-src="assets/images/space-coffee-bar.jpg"
+              data-lightbox-title="Coffee Bar"
+              data-lightbox-zone="Indoor"
+              data-lightbox-alt="Concept view of the poured concrete coffee bar counter, matte black steel shelving, and terracotta wall."
+              aria-label="Inspect Coffee Bar photo"
+            >
+              <img
+                src="assets/images/space-coffee-bar.jpg"
+                width="1264"
+                height="848"
+                decoding="sync"
+                alt="Concept view of the poured concrete coffee bar counter, matte black steel shelving, and terracotta wall."
+              >
+              <span class="space-shot__mat" aria-hidden="true"></span>
+            </button>
+            <figcaption class="space-shot__caption">
+              <span class="space-shot__name">Coffee Bar</span>
+              <span class="space-shot__zone">Indoor</span>
+            </figcaption>
+          </figure>
+
+          <figure class="space-shot space-shot--tall" data-category="indoor" data-reveal>
+            <button
+              class="space-shot__trigger"
+              type="button"
+              data-lightbox-src="assets/images/space-indoor-seating.jpg"
+              data-lightbox-title="Indoor Seating"
+              data-lightbox-zone="Indoor"
+              data-lightbox-alt="Concept view of indoor seating along a concrete bench beside tall black steel windows looking out to greenery."
+              aria-label="Inspect Indoor Seating photo"
+            >
+              <img
+                src="assets/images/space-indoor-seating.jpg"
+                width="896"
+                height="1200"
+                decoding="sync"
+                alt="Concept view of indoor seating along a concrete bench beside tall black steel windows looking out to greenery."
+              >
+              <span class="space-shot__mat" aria-hidden="true"></span>
+            </button>
+            <figcaption class="space-shot__caption">
+              <span class="space-shot__name">Indoor Seating</span>
+              <span class="space-shot__zone">Indoor</span>
+            </figcaption>
+          </figure>
+
+          <figure class="space-shot space-shot--full" data-category="outdoor" data-reveal>
+            <button
+              class="space-shot__trigger"
+              type="button"
+              data-lightbox-src="assets/images/space-terracotta-courtyard.jpg"
+              data-lightbox-title="Terracotta Courtyard"
+              data-lightbox-zone="Outdoor"
+              data-lightbox-alt="Concept view of the open-air terracotta courtyard with black steel pergola, concrete paving, and tropical trees."
+              aria-label="Inspect Terracotta Courtyard photo"
+            >
+              <img
+                src="assets/images/space-terracotta-courtyard.jpg"
+                width="1376"
+                height="768"
+                decoding="sync"
+                alt="Concept view of the open-air terracotta courtyard with black steel pergola, concrete paving, and tropical trees."
+              >
+              <span class="space-shot__mat" aria-hidden="true"></span>
+            </button>
+            <figcaption class="space-shot__caption">
+              <span class="space-shot__name">Terracotta Courtyard</span>
+              <span class="space-shot__zone">Outdoor</span>
+            </figcaption>
+          </figure>
+
+          <figure class="space-shot space-shot--half" data-category="outdoor" data-reveal>
+            <button
+              class="space-shot__trigger"
+              type="button"
+              data-lightbox-src="assets/images/space-communal-table.jpg"
+              data-lightbox-title="Communal Pavilion"
+              data-lightbox-zone="Outdoor"
+              data-lightbox-alt="Concept view of a long timber communal table under a black steel truss roof surrounded by greenery."
+              aria-label="Inspect Communal Pavilion photo"
+            >
+              <img
+                src="assets/images/space-communal-table.jpg"
+                width="1200"
+                height="896"
+                decoding="sync"
+                alt="Concept view of a long timber communal table under a black steel truss roof surrounded by greenery."
+              >
+              <span class="space-shot__mat" aria-hidden="true"></span>
+            </button>
+            <figcaption class="space-shot__caption">
+              <span class="space-shot__name">Communal Pavilion</span>
+              <span class="space-shot__zone">Outdoor</span>
+            </figcaption>
+          </figure>
+
+          <figure class="space-shot space-shot--half" data-category="outdoor" data-reveal>
+            <button
+              class="space-shot__trigger"
+              type="button"
+              data-lightbox-src="assets/images/space-greenery-corner.jpg"
+              data-lightbox-title="Garden Corner"
+              data-lightbox-zone="Outdoor"
+              data-lightbox-alt="Concept view of a quiet two-seat garden corner beside concrete planters, tropical leaves, and a terracotta wall."
+              aria-label="Inspect Garden Corner photo"
+            >
+              <img
+                src="assets/images/space-greenery-corner.jpg"
+                width="1200"
+                height="896"
+                decoding="sync"
+                alt="Concept view of a quiet two-seat garden corner beside concrete planters, tropical leaves, and a terracotta wall."
+              >
+              <span class="space-shot__mat" aria-hidden="true"></span>
+            </button>
+            <figcaption class="space-shot__caption">
+              <span class="space-shot__name">Garden Corner</span>
+              <span class="space-shot__zone">Outdoor</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="section-note" data-reveal>
+          Concept visuals reflecting NAKA's terracotta, black steel, concrete, and planting palette. Official photography pending.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--teaser" aria-labelledby="about-teaser-title">
+      <div class="page-shell">
+        <div class="teaser-strip" data-reveal>
+          <div class="brand-plaque-col">
+            <div class="brand-plaque" role="img" aria-label="NAKA Coffee and Space official emblem and wordmark">
+              <svg class="brand-plaque__mark" viewBox="0 0 64.9 109.5" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M56.1 107.1C54.6 107.7 52.7 107.7 51.3 107.5C50 107.3 48.9 106.8 47.8 106C46.7 105.1 45.4 103.5 44.5 102.2C43.7 100.9 43.2 99.5 42.8 98C42.4 96.4 42.3 94.6 42.3 92.7C42.4 90.4 42.3 86.9 43 83.9C44.4 77.5 49.3 59.8 50.6 54C51 52.3 50.8 50.2 50.5 49.1C50.4 48.5 49.8 47.8 49.2 47.6C48.6 47.4 47.5 47.5 46.9 48C46 48.7 44.6 50.4 43.9 52C41.6 57.5 35.3 75 32.8 80.8C31.8 83.1 30.4 85.1 28.9 86.9C27.4 88.8 25.3 90.8 23.7 91.9C22.4 92.8 20.9 93.4 19.4 93.5C17.9 93.5 15.9 92.8 14.7 92C13.7 91.4 12.9 90.4 12.5 89.2C12 87.7 11.7 84.8 11.8 82.9C11.9 81.2 12.5 79.7 13 78C13.9 75.4 15.4 70.8 17 67.1C19.6 61.2 26.4 47.4 28.5 42.7C29.1 41.5 29.6 40.3 29.7 39C29.9 37.4 30.2 34.6 29.7 33C29.1 31.6 27.6 30.2 26.3 29.5C25.2 28.9 23.5 28.9 22.4 28.9C21.4 28.9 20.4 29.2 19.5 29.7C17.9 30.5 14.8 32.4 12.9 34.1C11.1 35.7 9.9 37.6 8.5 39.6C7.1 41.6 5.7 44.8 4.7 45.9C4.2 46.4 3 46.3 2.5 46.2C2.2 46.1 1.9 45.4 2.1 45.1C3.2 42.8 7.4 35.3 9.3 32.4C10.6 30.6 12.1 29.2 13.8 27.9C15.5 26.6 17.3 25.3 19.5 24.6C21.7 23.7 25.1 23.2 27.3 23C29 22.8 30.8 23 32.4 23.5C34 24 35.7 25 36.8 26C37.9 27.1 38.5 28.6 39 29.9C39.4 31.2 39.4 32.6 39.4 33.9C39.3 35.2 39.2 36.6 38.7 37.9C36.8 43.1 30 59.9 28.2 65.1C27.7 66.4 27.7 68 27.8 69C27.8 69.8 28.2 70.9 28.6 71.2C28.8 71.4 29.5 71.2 29.8 70.9C30.4 70.5 31.3 69.7 31.7 68.8C33.4 64.8 37.8 52.1 40.1 47.2C41.6 44 44.1 40.9 45.9 39C47.2 37.5 49.2 36.4 50.6 35.8C51.8 35.3 53.2 35.2 54.4 35.4C55.6 35.6 57 36.2 57.9 37C58.7 37.8 59.5 38.9 59.7 40.1C60 42.4 60.1 47.2 59.9 50.9C59.6 55.6 58.3 63.6 58.2 68C58.1 71.1 58.5 73.9 59.1 77C59.7 80.1 61.1 83.7 61.7 86.9C62.3 90 62.9 93.6 62.9 95.9C62.9 97.7 62.3 99.6 61.9 100.9C61.6 102 61.2 102.9 60.5 103.7C59.6 104.7 57.7 106.5 56.1 107.1Z M52.4 2.1C53.3 2.1 54.3 2.2 55.2 2.7C56.3 3.2 57.8 4.2 58.7 5.1C59.6 6 60.1 7 60.5 8.1C60.9 9.3 60.9 11 60.9 12C60.9 12.6 60.9 13.3 60.7 13.9C60.4 14.8 59.9 16.2 59.1 17.2C58.3 18.2 57.2 19.3 56 20C54.9 20.7 53.4 21.3 52.4 21.5C51.5 21.6 50.6 21.4 49.9 21C49 20.5 47.9 19.5 47.3 18.5C46.7 17.3 46.4 14.9 46.3 13.8C46.2 13.1 46.2 12.5 46.5 11.9C47 10.9 48.2 8.7 49 8C49.6 7.5 50.7 7.5 51.4 7.4C52 7.4 52.7 7.4 53.2 7.8C53.8 8.4 55.3 10 55.5 11.1C55.7 12.3 55 13.8 54.5 14.6C54 15.4 52.8 16.1 52.2 16.3C51.8 16.4 51.3 16.1 51 15.9C50.6 15.6 50.2 15.2 50.1 14.8C49.9 14.3 49.8 13.4 50 13.1C50.2 12.8 50.8 12.6 51.2 12.7C51.6 12.7 52.1 13.3 52.4 13.2C52.7 13.1 53.1 12.4 53.1 12C53 11.5 52.8 10.7 52.3 10.4C51.9 10.2 50.8 10.2 50.3 10.4C49.9 10.5 49.4 10.7 49.1 11.1C48.8 11.7 48.3 13.3 48.2 14C48.1 14.6 48.1 15.1 48.3 15.6C48.5 16.2 48.8 17 49.3 17.6C49.8 18.1 50.6 18.7 51.3 18.7C52.4 18.8 54.5 18.2 55.5 17.6C56.3 17.2 57.1 16.5 57.4 15.7C57.9 14.6 58.4 12.3 58.5 11.1C58.5 10 57.9 8.9 57.6 8.1C57.3 7.5 56.9 6.9 56.3 6.4C55.6 5.8 54.2 4.9 53.3 4.7C52.5 4.4 51.5 4.5 50.7 4.9C49.6 5.5 47.4 7.2 46.4 8.5C45.4 9.7 44.9 11.9 44.4 12.7C44.3 13 43.7 13.3 43.5 13.1C43.2 13 42.9 12.4 42.8 12C42.7 11.5 42.7 10.7 43 10C43.5 8.9 44.9 6.3 46 5.1C46.9 4 48.5 3.2 49.5 2.7C50.4 2.3 51.4 2.1 52.4 2.1Z M43.2 17.4C44 17.4 44.7 18 44.7 18.8C44.7 19.6 44 20.3 43.2 20.3C42.4 20.3 41.7 19.6 41.7 18.8C41.7 18 42.4 17.4 43.2 17.4Z"/>
+              </svg>
+              <span class="brand-plaque__wordmark">NAKA COFFEE &amp; SPACE</span>
+            </div>
+
+            <div class="teaser-swatches" aria-hidden="true">
+              <span class="teaser-swatch teaser-swatch--terracotta"><span>Terracotta</span></span>
+              <span class="teaser-swatch teaser-swatch--steel"><span>Steel</span></span>
+              <span class="teaser-swatch teaser-swatch--concrete"><span>Concrete</span></span>
+              <span class="teaser-swatch teaser-swatch--olive"><span>Greenery</span></span>
+            </div>
+          </div>
+
+          <div class="teaser-copy">
+            <h2 id="about-teaser-title">Built from clay, steel, and open air.</h2>
+            <p class="teaser-copy__text">
+              NAKA pairs fired terracotta walls, matte black steel framing, poured concrete, and open-air tropical planting across indoor and courtyard seating.
+            </p>
+            <a class="button button--on-brand" href="about.html">Read About NAKA</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--location" id="location" aria-labelledby="location-title">
+      <div class="page-shell">
+        <div class="location-layout">
+          <div class="location-copy" data-reveal>
+            <header class="section-heading">
+              <h2 id="location-title">Find Us</h2>
+            </header>
+
+            <dl class="location-details">
+              <div>
+                <dt>Area</dt>
+                <dd>Ciracas, East Jakarta</dd>
+              </div>
+              <div>
+                <dt>Address</dt>
+                <dd>Jl. Pengantin Ali No. 55, RT.4/RW.6, Ciracas, East Jakarta, DKI Jakarta 13740</dd>
+              </div>
+              <div>
+                <dt>Directions</dt>
+                <dd>NAKA Coffee &amp; Space on Google Maps</dd>
+              </div>
+            </dl>
+
+            <a
+              class="button button--primary"
+              href="https://maps.app.goo.gl/RC8scp3rpt9zcupy8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Directions
+            </a>
+          </div>
+
+          <div class="map-panel" data-reveal>
+            <div class="map-panel__frame map-panel__frame--embed">
+              <iframe
+                class="map-panel__embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5248!2d106.8803968!3d-6.3259691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed1475c8a195%3A0xe268342f99e2b57e!2sNAKA%20Coffee%20%26%20Space!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                title="Google Maps location of NAKA Coffee and Space at Jl. Pengantin Ali No. 55, Ciracas, East Jakarta"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="page-shell">
+      <div class="footer-grid" id="contact">
+        <div class="footer-col footer-col--brand">
+          <a class="brand brand--footer" href="#top" aria-label="NAKA Coffee and Space, back to top">
+            <svg class="brand__mark" viewBox="0 0 64.9 109.5" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M56.1 107.1C54.6 107.7 52.7 107.7 51.3 107.5C50 107.3 48.9 106.8 47.8 106C46.7 105.1 45.4 103.5 44.5 102.2C43.7 100.9 43.2 99.5 42.8 98C42.4 96.4 42.3 94.6 42.3 92.7C42.4 90.4 42.3 86.9 43 83.9C44.4 77.5 49.3 59.8 50.6 54C51 52.3 50.8 50.2 50.5 49.1C50.4 48.5 49.8 47.8 49.2 47.6C48.6 47.4 47.5 47.5 46.9 48C46 48.7 44.6 50.4 43.9 52C41.6 57.5 35.3 75 32.8 80.8C31.8 83.1 30.4 85.1 28.9 86.9C27.4 88.8 25.3 90.8 23.7 91.9C22.4 92.8 20.9 93.4 19.4 93.5C17.9 93.5 15.9 92.8 14.7 92C13.7 91.4 12.9 90.4 12.5 89.2C12 87.7 11.7 84.8 11.8 82.9C11.9 81.2 12.5 79.7 13 78C13.9 75.4 15.4 70.8 17 67.1C19.6 61.2 26.4 47.4 28.5 42.7C29.1 41.5 29.6 40.3 29.7 39C29.9 37.4 30.2 34.6 29.7 33C29.1 31.6 27.6 30.2 26.3 29.5C25.2 28.9 23.5 28.9 22.4 28.9C21.4 28.9 20.4 29.2 19.5 29.7C17.9 30.5 14.8 32.4 12.9 34.1C11.1 35.7 9.9 37.6 8.5 39.6C7.1 41.6 5.7 44.8 4.7 45.9C4.2 46.4 3 46.3 2.5 46.2C2.2 46.1 1.9 45.4 2.1 45.1C3.2 42.8 7.4 35.3 9.3 32.4C10.6 30.6 12.1 29.2 13.8 27.9C15.5 26.6 17.3 25.3 19.5 24.6C21.7 23.7 25.1 23.2 27.3 23C29 22.8 30.8 23 32.4 23.5C34 24 35.7 25 36.8 26C37.9 27.1 38.5 28.6 39 29.9C39.4 31.2 39.4 32.6 39.4 33.9C39.3 35.2 39.2 36.6 38.7 37.9C36.8 43.1 30 59.9 28.2 65.1C27.7 66.4 27.7 68 27.8 69C27.8 69.8 28.2 70.9 28.6 71.2C28.8 71.4 29.5 71.2 29.8 70.9C30.4 70.5 31.3 69.7 31.7 68.8C33.4 64.8 37.8 52.1 40.1 47.2C41.6 44 44.1 40.9 45.9 39C47.2 37.5 49.2 36.4 50.6 35.8C51.8 35.3 53.2 35.2 54.4 35.4C55.6 35.6 57 36.2 57.9 37C58.7 37.8 59.5 38.9 59.7 40.1C60 42.4 60.1 47.2 59.9 50.9C59.6 55.6 58.3 63.6 58.2 68C58.1 71.1 58.5 73.9 59.1 77C59.7 80.1 61.1 83.7 61.7 86.9C62.3 90 62.9 93.6 62.9 95.9C62.9 97.7 62.3 99.6 61.9 100.9C61.6 102 61.2 102.9 60.5 103.7C59.6 104.7 57.7 106.5 56.1 107.1Z M52.4 2.1C53.3 2.1 54.3 2.2 55.2 2.7C56.3 3.2 57.8 4.2 58.7 5.1C59.6 6 60.1 7 60.5 8.1C60.9 9.3 60.9 11 60.9 12C60.9 12.6 60.9 13.3 60.7 13.9C60.4 14.8 59.9 16.2 59.1 17.2C58.3 18.2 57.2 19.3 56 20C54.9 20.7 53.4 21.3 52.4 21.5C51.5 21.6 50.6 21.4 49.9 21C49 20.5 47.9 19.5 47.3 18.5C46.7 17.3 46.4 14.9 46.3 13.8C46.2 13.1 46.2 12.5 46.5 11.9C47 10.9 48.2 8.7 49 8C49.6 7.5 50.7 7.5 51.4 7.4C52 7.4 52.7 7.4 53.2 7.8C53.8 8.4 55.3 10 55.5 11.1C55.7 12.3 55 13.8 54.5 14.6C54 15.4 52.8 16.1 52.2 16.3C51.8 16.4 51.3 16.1 51 15.9C50.6 15.6 50.2 15.2 50.1 14.8C49.9 14.3 49.8 13.4 50 13.1C50.2 12.8 50.8 12.6 51.2 12.7C51.6 12.7 52.1 13.3 52.4 13.2C52.7 13.1 53.1 12.4 53.1 12C53 11.5 52.8 10.7 52.3 10.4C51.9 10.2 50.8 10.2 50.3 10.4C49.9 10.5 49.4 10.7 49.1 11.1C48.8 11.7 48.3 13.3 48.2 14C48.1 14.6 48.1 15.1 48.3 15.6C48.5 16.2 48.8 17 49.3 17.6C49.8 18.1 50.6 18.7 51.3 18.7C52.4 18.8 54.5 18.2 55.5 17.6C56.3 17.2 57.1 16.5 57.4 15.7C57.9 14.6 58.4 12.3 58.5 11.1C58.5 10 57.9 8.9 57.6 8.1C57.3 7.5 56.9 6.9 56.3 6.4C55.6 5.8 54.2 4.9 53.3 4.7C52.5 4.4 51.5 4.5 50.7 4.9C49.6 5.5 47.4 7.2 46.4 8.5C45.4 9.7 44.9 11.9 44.4 12.7C44.3 13 43.7 13.3 43.5 13.1C43.2 13 42.9 12.4 42.8 12C42.7 11.5 42.7 10.7 43 10C43.5 8.9 44.9 6.3 46 5.1C46.9 4 48.5 3.2 49.5 2.7C50.4 2.3 51.4 2.1 52.4 2.1Z M43.2 17.4C44 17.4 44.7 18 44.7 18.8C44.7 19.6 44 20.3 43.2 20.3C42.4 20.3 41.7 19.6 41.7 18.8C41.7 18 42.4 17.4 43.2 17.4Z"/>
+            </svg>
+            <span class="brand__stack-label">NAKA COFFEE &amp; SPACE</span>
+          </a>
+          <p class="footer-brand__copy">
+            An Indonesian coffee shop shaped by terracotta walls, black steel, concrete, and open-air greenery.
+          </p>
+
+          <div class="footer-follow">
+            <h2 class="footer-col__title" id="footer-follow-title">Follow Us</h2>
+            <div class="social-row" aria-labelledby="footer-follow-title">
+              <button class="social-circle" type="button" data-placeholder="instagram" aria-label="Instagram, official link pending">
+                <svg class="social-circle__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.4" cy="6.6" r="1.25" fill="currentColor"/>
+                </svg>
+              </button>
+
+              <button class="social-circle" type="button" data-placeholder="tiktok" aria-label="TikTok, official link pending">
+                <svg class="social-circle__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14.5 3v11.2a3.8 3.8 0 1 1-3.1-3.73V7.2a7 7 0 1 0 6.1 6.95V8.6c1.25.92 2.78 1.46 4.4 1.5V7c-2.25-.18-4.1-1.78-4.4-4h-3z" fill="currentColor"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col footer-col--nav">
+          <h2 class="footer-col__title" id="footer-explore-title">Explore</h2>
+          <nav class="footer-nav" aria-labelledby="footer-explore-title">
+            <a href="#top" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="#our-space">Our Space</a>
+            <a href="#location">Location</a>
+          </nav>
+        </div>
+
+        <section class="footer-col footer-col--contact" aria-labelledby="contact-title">
+          <h2 class="footer-col__title" id="contact-title">Contact</h2>
+
+          <div class="footer-contact-list">
+            <!-- TODO: Replace dummy WhatsApp numbers below with official NAKA WhatsApp numbers before launch -->
+            <a
+              class="footer-contact-item footer-contact-item--wa"
+              href="https://wa.me/6281200000001?text=Hello%20NAKA%20Coffee%20and%20Space%2C%20I%20would%20like%20to%20reach%20Customer%20Service."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with NAKA Customer Service on WhatsApp at +62 812 0000 0001 (dummy number)"
+            >
+              <svg class="footer-contact-item__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.5 11.8a8.5 8.5 0 0 1-12.5 7.5L3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 20.5 11.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9.6 8.9c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.8 2.2.8 2.6.7 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3l-1.5-.7c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.6Z" fill="currentColor"/>
+              </svg>
+              <span class="footer-contact-item__body">
+                <span class="footer-contact-item__label">Customer Service</span>
+                <span class="footer-contact-item__value">+62 812 0000 0001</span>
+              </span>
+              <svg class="footer-contact-item__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4.5 11.5L11.5 4.5M6 4.5h5.5V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+              </svg>
+            </a>
+
+            <a
+              class="footer-contact-item footer-contact-item--wa"
+              href="https://wa.me/6281200000002?text=Hello%20NAKA%20Coffee%20and%20Space%2C%20I%20would%20like%20to%20inquire%20about%20a%20Bulk%20or%20Event%20Order."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with NAKA Bulk and Event Order on WhatsApp at +62 812 0000 0002 (dummy number)"
+            >
+              <svg class="footer-contact-item__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.5 11.8a8.5 8.5 0 0 1-12.5 7.5L3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 20.5 11.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9.6 8.9c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.8 2.2.8 2.6.7 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3l-1.5-.7c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.6Z" fill="currentColor"/>
+              </svg>
+              <span class="footer-contact-item__body">
+                <span class="footer-contact-item__label">Bulk &amp; Event Order</span>
+                <span class="footer-contact-item__value">+62 812 0000 0002</span>
+              </span>
+              <svg class="footer-contact-item__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4.5 11.5L11.5 4.5M6 4.5h5.5V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+              </svg>
+            </a>
+
+            <a
+              class="footer-contact-item footer-contact-item--location"
+              href="https://maps.app.goo.gl/RC8scp3rpt9zcupy8"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open NAKA Coffee and Space on Google Maps, Jl. Pengantin Ali No. 55, Ciracas, East Jakarta"
+            >
+              <svg class="footer-contact-item__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                <circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.7"/>
+              </svg>
+              <span class="footer-contact-item__body">
+                <span class="footer-contact-item__label">Location</span>
+                <span class="footer-contact-item__address">Jl. Pengantin Ali No. 55, Ciracas, East Jakarta</span>
+              </span>
+              <svg class="footer-contact-item__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4.5 11.5L11.5 4.5M6 4.5h5.5V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+              </svg>
+            </a>
+          </div>
+
+          <p class="footer-contact__note">Dummy WhatsApp numbers for prototype preview.</p>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NAKA Coffee and Space.</p>
+        <p>Pre-launch prototype. Concept visuals and dummy WhatsApp numbers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="placeholder-dialog" id="placeholder-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-body">
+    <div class="placeholder-dialog__inner">
+      <h2 id="dialog-title">Official link pending</h2>
+      <p id="dialog-body"></p>
+      <button class="button button--primary" type="button" data-dialog-close>Close</button>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox-dialog" id="lightbox-dialog" aria-labelledby="lightbox-title">
+    <div class="lightbox-dialog__inner">
+      <div class="lightbox-dialog__head">
+        <div>
+          <h2 id="lightbox-title"></h2>
+          <p class="lightbox-dialog__meta" id="lightbox-meta"></p>
+        </div>
+        <button class="lightbox-close" type="button" aria-label="Close photo view" data-lightbox-close>
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M5 5l12 12M17 5L5 17" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </button>
+      </div>
+      <div class="lightbox-dialog__stage">
+        <img id="lightbox-img" src="assets/images/space-coffee-bar.jpg" alt="Concept view of the poured concrete coffee bar counter, matte black steel shelving, and terracotta wall." width="1264" height="848" loading="lazy" decoding="async">
+      </div>
+      <div class="lightbox-dialog__foot">
+        <p class="lightbox-dialog__note">Concept visual pending official NAKA photography.</p>
+        <div class="lightbox-dialog__nav">
+          <button class="button button--ghost-dark" type="button" data-lightbox-prev>Previous</button>
+          <button class="button button--ghost-dark" type="button" data-lightbox-next>Next</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

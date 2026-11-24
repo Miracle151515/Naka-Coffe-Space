@@ -1,0 +1,8 @@
+# Local tool & review artifacts
+.taste-skill/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

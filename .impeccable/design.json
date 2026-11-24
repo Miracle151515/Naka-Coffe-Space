@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T08:55:00.000Z",
+  "title": "Design System: NAKA Coffee and Space",
+  "extensions": {
+    "colorMeta": {
+      "terracotta": {
+        "role": "primary",
+        "displayName": "Fired Terracotta",
+        "canonical": "oklch(57.5% 0.1559 48.1)",
+        "tonalRamp": [
+          "#1D0500",
+          "#471300",
+          "#782700",
+          "#A64400",
+          "#CF692B",
+          "#EA966A",
+          "#F8C4A9",
+          "#FCE6DB"
+        ]
+      },
+      "terracotta-light": {
+        "role": "primary",
+        "displayName": "Terracotta Light",
+        "canonical": "oklch(70.9% 0.1530 55.5)",
+        "tonalRamp": [
+          "#1C0600",
+          "#451600",
+          "#752C00",
+          "#A24900",
+          "#CA6D1B",
+          "#E69A64",
+          "#F5C6A6",
+          "#FBE7DA"
+        ]
+      },
+      "terracotta-ink": {
+        "role": "primary",
+        "displayName": "Terracotta Ink",
+        "canonical": "oklch(45.5% 0.1252 47.3)",
+        "tonalRamp": [
+          "#1B0701",
+          "#421801",
+          "#6F3006",
+          "#9B4D20",
+          "#C37146",
+          "#E09C7A",
+          "#F1C7B2",
+          "#F9E7DF"
+        ]
+      },
+      "terracotta-strong": {
+        "role": "primary",
+        "displayName": "Terracotta Strong",
+        "canonical": "oklch(50.9% 0.1399 47.4)",
+        "tonalRamp": [
+          "#1C0600",
+          "#441600",
+          "#742C00",
+          "#A1490F",
+          "#C96D3B",
+          "#E59973",
+          "#F5C5AE",
+          "#FAE7DD"
+        ]
+      },
+      "terracotta-deep": {
+        "role": "primary",
+        "displayName": "Terracotta Deep",
+        "canonical": "oklch(41.1% 0.1137 47.0)",
+        "tonalRamp": [
+          "#190802",
+          "#401A05",
+          "#6C3211",
+          "#97502A",
+          "#BE734E",
+          "#DB9E7F",
+          "#EEC8B5",
+          "#F8E7E0"
+        ]
+      },
+      "olive": {
+        "role": "secondary",
+        "displayName": "Olive Greenery",
+        "canonical": "oklch(59.9% 0.0704 118.0)",
+        "tonalRamp": [
+          "#0C0F00",
+          "#242A08",
+          "#3F471D",
+          "#5D6636",
+          "#7C8659",
+          "#A1AA84",
+          "#C8CEB4",
+          "#EAEDDF"
+        ]
+      },
+      "olive-deep": {
+        "role": "secondary",
+        "displayName": "Olive Deep",
+        "canonical": "oklch(55.2% 0.0678 119.6)",
+        "tonalRamp": [
+          "#0C0F01",
+          "#232A0B",
+          "#3E471F",
+          "#5C6639",
+          "#7B865B",
+          "#A0AA86",
+          "#C7CEB5",
+          "#E9EDE0"
+        ]
+      },
+      "charcoal": {
+        "role": "neutral",
+        "displayName": "Charcoal",
+        "canonical": "oklch(24.1% 0.0048 67.6)",
+        "tonalRamp": [
+          "#0E0D0C",
+          "#282625",
+          "#444240",
+          "#62605D",
+          "#82807D",
+          "#A6A4A2",
+          "#CBCAC9",
+          "#ECEBEA"
+        ]
+      },
+      "charcoal-soft": {
+        "role": "neutral",
+        "displayName": "Charcoal Soft",
+        "canonical": "oklch(32.0% 0.0183 45.8)",
+        "tonalRamp": [
+          "#110C0A",
+          "#2C2421",
+          "#4A403B",
+          "#6A5D58",
+          "#897D78",
+          "#ACA29D",
+          "#D0C9C5",
+          "#EEEAE8"
+        ]
+      },
+      "social-icon": {
+        "role": "neutral",
+        "displayName": "Social Icon Espresso",
+        "canonical": "oklch(28.2% 0.0115 55.9)",
+        "tonalRamp": [
+          "#0F0D0C",
+          "#292623",
+          "#494440",
+          "#6B6560",
+          "#8F8883",
+          "#B2ADA9",
+          "#D4D0CE",
+          "#ECEBEA"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "oklch(95.2% 0.0114 71.9)",
+        "tonalRamp": [
+          "#0F0D0B",
+          "#292622",
+          "#46423C",
+          "#655F5A",
+          "#847F79",
+          "#A8A49F",
+          "#CDCAC6",
+          "#ECEBE9"
+        ]
+      },
+      "beige": {
+        "role": "neutral",
+        "displayName": "Beige",
+        "canonical": "oklch(90.0% 0.0202 70.0)",
+        "tonalRamp": [
+          "#100D09",
+          "#2B251F",
+          "#494138",
+          "#685F54",
+          "#887E74",
+          "#ABA39B",
+          "#CFC9C3",
+          "#EDEBE7"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(26.8% 0.0081 59.3)",
+        "tonalRamp": [
+          "#0F0D0B",
+          "#292624",
+          "#45413E",
+          "#645F5C",
+          "#847F7C",
+          "#A8A4A1",
+          "#CDCAC8",
+          "#ECEBEA"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "oklch(44.4% 0.0154 63.6)",
+        "tonalRamp": [
+          "#100D0A",
+          "#2B2521",
+          "#48413B",
+          "#675F58",
+          "#877F78",
+          "#AAA39D",
+          "#CEC9C5",
+          "#EDEBE8"
+        ]
+      },
+      "light-muted": {
+        "role": "neutral",
+        "displayName": "Light Muted",
+        "canonical": "oklch(81.1% 0.0214 67.5)",
+        "tonalRamp": [
+          "#110C08",
+          "#2C251E",
+          "#4A4137",
+          "#695E54",
+          "#897E74",
+          "#ACA39A",
+          "#D0C9C3",
+          "#EEEAE7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The Home Hero editorial wordmark (NAKA. / Coffee and Space), set large enough that the letterforms anchor the atmosphere photograph."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Every section heading, balanced, with deliberately tight leading."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "One serif introduction under a heading, at most one per section."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose and UI copy in Archivo, capped near 61ch on the widest column."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, material names, status chips and meta rows; never below 12px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "focus-ring",
+        "value": "0 0 0 5px #211F1D",
+        "purpose": "The only shadow in the system. Keeps the focus outline visible against light, dark, and terracotta grounds; present only while focused."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entrance reveals, nav underline draw, contact-link padding."
+      },
+      {
+        "name": "duration-state",
+        "value": "180ms",
+        "purpose": "Color and background transitions on buttons, links and the header."
+      },
+      {
+        "name": "duration-underline",
+        "value": "220ms",
+        "purpose": "Nav underline scaleX draw."
+      },
+      {
+        "name": "reveal-distance",
+        "value": "14px",
+        "purpose": "Section reveal translateY distance before settling."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lg",
+        "value": "1100px"
+      },
+      {
+        "name": "md",
+        "value": "960px"
+      },
+      {
+        "name": "sm",
+        "value": "620px"
+      },
+      {
+        "name": "xs",
+        "value": "360px"
+      }
+    ],
+    "spacingScale": {
+      "gutter": "clamp(20px, 4.8vw, 64px)",
+      "section": "clamp(68px, 9vw, 128px)",
+      "contentWidth": "1240px",
+      "headerHeight": "84px",
+      "radius": "2px"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one filled action per screen. Calibrated Terracotta Ink (#8C3B00) with cream text (6.65:1 on cream); steps to Terracotta Strong (#A34600) on hover and presses down 1px.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Explore Our Space</button>",
+      "css": ".ds-btn-primary {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 48px;\n  padding: 12px 22px;\n  border: 1px solid var(--color-brand, #BF5501);\n  border-radius: 2px;\n  background: var(--color-brand-ink, #8C3B00);\n  color: var(--color-cream, #F4EEE7);\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n  font-size: 0.82rem;\n  font-weight: 500;\n  line-height: 1.2;\n  letter-spacing: 0.015em;\n  cursor: pointer;\n  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;\n}\n.ds-btn-primary:hover { background: var(--color-brand-strong, #A34600); }\n.ds-btn-primary:active { transform: translateY(1px); }\n.ds-btn-primary:focus-visible {\n  outline: 2px solid var(--color-cream, #F4EEE7);\n  outline-offset: 3px;\n  box-shadow: 0 0 0 5px var(--color-charcoal, #211F1D);\n}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The secondary action on dark charcoal or hero photo grounds. Bordered and translucent at rest, inverts to a cream fill on hover.",
+      "html": "<div class=\"ds-ghost-ground\"><button class=\"ds-btn-ghost\" type=\"button\">Find Our Location</button></div>",
+      "css": ".ds-ghost-ground {\n  display: flex;\n  padding: 24px;\n  background: var(--color-charcoal, #211F1D);\n}\n.ds-btn-ghost {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 48px;\n  padding: 12px 22px;\n  border: 1px solid rgba(244, 238, 231, 0.62);\n  border-radius: 2px;\n  background: rgba(33, 31, 29, 0.36);\n  color: var(--color-cream, #F4EEE7);\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n  font-size: 0.82rem;\n  font-weight: 500;\n  line-height: 1.2;\n  letter-spacing: 0.015em;\n  cursor: pointer;\n  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;\n}\n.ds-btn-ghost:hover {\n  background: var(--color-cream, #F4EEE7);\n  border-color: var(--color-cream, #F4EEE7);\n  color: var(--color-charcoal, #211F1D);\n}\n.ds-btn-ghost:active { transform: translateY(1px); }\n.ds-btn-ghost:focus-visible {\n  outline: 2px solid var(--color-cream, #F4EEE7);\n  outline-offset: 3px;\n  box-shadow: 0 0 0 5px var(--color-charcoal, #211F1D);\n}"
+    },
+    {
+      "name": "Brand Logo Plaque",
+      "kind": "custom",
+      "refersTo": "logo-plaque",
+      "description": "Architectural Cream (#F4EEE7) plaque framing the official burnt terracotta (#BF5501) stacked vertical NAKA logo inside the full-bleed Terracotta Brand Profile band (#A34600 to #7A3200).",
+      "html": "<div class=\"ds-brand-band\"><div class=\"ds-logo-plaque\"><span class=\"ds-logo-mark\">n</span><span class=\"ds-logo-wordmark\">NAKA COFFEE &amp; SPACE</span></div></div>",
+      "css": ".ds-brand-band {\n  display: flex;\n  padding: 32px;\n  background: linear-gradient(135deg, var(--color-brand-strong, #A34600) 0%, var(--color-brand-deep, #7A3200) 100%);\n}\n.ds-logo-plaque {\n  display: inline-flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 10px;\n  padding: 24px 28px;\n  border: 1px solid var(--color-brand, #BF5501);\n  border-radius: 0;\n  background: var(--color-cream, #F4EEE7);\n  color: var(--color-brand, #BF5501);\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.ds-logo-mark {\n  font-family: \"Bodoni Moda\", Georgia, serif;\n  font-size: 2.2rem;\n  line-height: 1;\n}\n.ds-logo-wordmark {\n  color: var(--color-brand-ink, #8C3B00);\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 0.14em;\n}"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "description": "Inline nav item with a 1px calibrated terracotta underline (#BF5501) that draws from the left on hover and stays for the current page or section.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\" aria-current=\"location\">Our Space</a><a class=\"ds-nav-link\" href=\"#\">About</a></nav>",
+      "css": ".ds-nav {\n  display: flex;\n  align-items: center;\n  gap: 26px;\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.ds-nav-link {\n  position: relative;\n  padding-block: 8px;\n  color: var(--color-text-dark, #292522);\n  font-size: 0.8rem;\n  font-weight: 500;\n  letter-spacing: 0.02em;\n  text-decoration: none;\n}\n.ds-nav-link::after {\n  content: \"\";\n  position: absolute;\n  right: 0;\n  bottom: 8px;\n  left: 0;\n  height: 1px;\n  background: var(--color-brand, #BF5501);\n  transform: scaleX(0);\n  transform-origin: right;\n  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1);\n}\n.ds-nav-link:hover::after,\n.ds-nav-link[aria-current=\"location\"]::after {\n  transform: scaleX(1);\n  transform-origin: left;\n}\n.ds-nav-link[aria-current=\"location\"] { color: var(--color-brand-ink, #8C3B00); }\n.ds-nav-link:focus-visible {\n  outline: 2px solid var(--color-cream, #F4EEE7);\n  outline-offset: 3px;\n  box-shadow: 0 0 0 5px var(--color-charcoal, #211F1D);\n}"
+    },
+    {
+      "name": "Material Chip",
+      "kind": "chip",
+      "refersTo": "chip-material",
+      "description": "The label pinned inside a material swatch. Stacked name and note on a charcoal block, square corners, inverts on the steel swatch.",
+      "html": "<span class=\"ds-chip\"><span class=\"ds-chip-name\">Terracotta</span><span class=\"ds-chip-note\">Fired clay wall</span></span>",
+      "css": ".ds-chip {\n  display: inline-flex;\n  flex-direction: column;\n  gap: 2px;\n  padding: 8px 10px;\n  background: var(--color-charcoal, #211F1D);\n  color: var(--color-cream, #F4EEE7);\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.ds-chip-name {\n  font-size: 0.75rem;\n  font-weight: 600;\n  line-height: 1.25;\n  letter-spacing: 0.02em;\n}\n.ds-chip-note {\n  color: var(--color-beige, #E7DCD0);\n  font-size: 0.75rem;\n  line-height: 1.3;\n}"
+    },
+    {
+      "name": "Material Swatch",
+      "kind": "card",
+      "description": "The system's core material unit: a flat plane sampled from NAKA's real materials (starting with calibrated Fired Terracotta #BF5501) with a nested hairline mat and a chip pinned to its base.",
+      "html": "<div class=\"ds-swatch ds-swatch-terracotta\"><span class=\"ds-chip\"><span class=\"ds-chip-name\">Terracotta</span><span class=\"ds-chip-note\">Fired clay wall</span></span></div>",
+      "css": ".ds-swatch {\n  position: relative;\n  display: flex;\n  align-items: flex-end;\n  min-height: 156px;\n  padding: 12px;\n  border: 1px solid rgba(33, 31, 29, 0.24);\n  background: var(--color-brand, #BF5501);\n}\n.ds-swatch::before {\n  content: \"\";\n  position: absolute;\n  inset: 9px;\n  border: 1px solid rgba(33, 31, 29, 0.2);\n  pointer-events: none;\n}\n.ds-swatch-steel { background: var(--color-charcoal, #211F1D); border-color: var(--color-charcoal, #211F1D); }\n.ds-swatch-steel::before { border-color: rgba(244, 238, 231, 0.22); }\n.ds-swatch-steel .ds-chip { background: var(--color-cream, #F4EEE7); color: var(--color-charcoal, #211F1D); }\n.ds-swatch-steel .ds-chip-note { color: var(--color-text-muted-dark, #4A433C); }\n.ds-swatch-olive { background: var(--color-olive, #7C8655); }\n.ds-chip {\n  position: relative;\n  z-index: 1;\n  display: inline-flex;\n  flex-direction: column;\n  gap: 2px;\n  padding: 8px 10px;\n  background: var(--color-charcoal, #211F1D);\n  color: var(--color-cream, #F4EEE7);\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.ds-chip-name { font-size: 0.75rem; font-weight: 600; line-height: 1.25; letter-spacing: 0.02em; }\n.ds-chip-note { color: var(--color-beige, #E7DCD0); font-size: 0.75rem; line-height: 1.3; }"
+    },
+    {
+      "name": "Placeholder Dialog",
+      "kind": "custom",
+      "description": "Every unverified external action (Instagram, TikTok, Get Directions) opens this honest native dialog sheet instead of linking somewhere unverified.",
+      "html": "<div class=\"ds-dialog\" role=\"dialog\" aria-labelledby=\"ds-dialog-title\"><p class=\"ds-dialog-label\">Pending Link</p><h2 class=\"ds-dialog-title\" id=\"ds-dialog-title\">Directions link pending</h2><p class=\"ds-dialog-body\">The official map destination has not been supplied yet. This button becomes a direct Google Maps link once NAKA confirms the location.</p><button class=\"ds-btn-primary\" type=\"button\">Close</button></div>",
+      "css": ".ds-dialog {\n  width: min(560px, 100%);\n  padding: 42px;\n  border: 1px solid var(--color-charcoal, #211F1D);\n  border-radius: 0;\n  background: var(--color-cream, #F4EEE7);\n  color: var(--color-text-dark, #292522);\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.ds-dialog-label {\n  margin: 0 0 14px;\n  color: var(--color-brand-ink, #8C3B00);\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 0.05em;\n  text-transform: uppercase;\n}\n.ds-dialog-title {\n  margin: 0;\n  font-family: \"Bodoni Moda\", Georgia, serif;\n  font-size: 1.9rem;\n  font-weight: 400;\n  line-height: 1.1;\n  letter-spacing: -0.02em;\n}\n.ds-dialog-body {\n  margin: 14px 0 22px;\n  color: var(--color-text-muted-dark, #4A433C);\n  font-size: 0.95rem;\n  line-height: 1.6;\n}\n.ds-btn-primary {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 48px;\n  padding: 12px 22px;\n  border: 1px solid var(--color-brand, #BF5501);\n  border-radius: 2px;\n  background: var(--color-brand-ink, #8C3B00);\n  color: var(--color-cream, #F4EEE7);\n  font-size: 0.82rem;\n  font-weight: 500;\n  cursor: pointer;\n  transition: background-color 180ms ease;\n}\n.ds-btn-primary:hover { background: var(--color-brand-strong, #A34600); }\n.ds-btn-primary:focus-visible {\n  outline: 2px solid var(--color-cream, #F4EEE7);\n  outline-offset: 3px;\n  box-shadow: 0 0 0 5px var(--color-charcoal, #211F1D);\n}"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "description": "Display heading plus the small readable Terracotta Ink (#8C3B00) section meta note.",
+      "html": "<div class=\"ds-heading\"><h2 class=\"ds-heading-title\">Discover NAKA</h2><p class=\"ds-heading-id\">Brand profile &amp; materials</p></div>",
+      "css": ".ds-heading {\n  font-family: \"Archivo\", \"Helvetica Neue\", Arial, sans-serif;\n  color: var(--color-text-dark, #292522);\n}\n.ds-heading-title {\n  margin: 0;\n  font-family: \"Bodoni Moda\", Georgia, serif;\n  font-size: clamp(2.5rem, 4.8vw, 4.4rem);\n  font-weight: 400;\n  line-height: 0.94;\n  letter-spacing: -0.03em;\n  text-wrap: balance;\n}\n.ds-heading-id {\n  margin: 0.65rem 0 0;\n  color: var(--color-brand-ink, #8C3B00);\n  font-size: 0.82rem;\n  font-weight: 500;\n  line-height: 1.4;\n  letter-spacing: 0.015em;\n}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Material Board & Terracotta Brand Profile",
+    "overview": "NAKA Coffee and Space is organized across two static pages (index.html and about.html) around its official supplied logo and its four real materials: burnt fired terracotta wall, matte black steel, grey concrete, and olive greenery. Charcoal (#211F1D) and Cream (#F4EEE7) remain the primary structural grounds across the atmosphere Hero, Our Space mosaic, Material Character board, Find Us location band, and Contact Footer, while calibrated burnt Terracotta unmistakably owns NAKA's Brand Profile on both pages: a full-bleed Terracotta Brand Profile statement band on Home (section--teaser, #A34600 to #7A3200 with a Cream logo plaque) and a full-bleed Terracotta Brand Profile hero on About (about-hero).\n\nThe official NAKA Coffee & Space logo (organic cursive n emblem topped with a small spiral and dot, paired with uppercase NAKA COFFEE & SPACE) adapts cleanly to every surface: #BF5501 emblem + #8C3B00 wordmark on the scrolled Cream header; #E88432 emblem + #F4EEE7 wordmark on Charcoal in the Mobile Menu and Footer; clean #F4EEE7 monochrome on the unscrolled header over the Hero photo and Terracotta hero; and the official #BF5501 stacked logo inside a Cream architectural plaque on the Home Terracotta Brand Profile band. The Home Hero headline retains editorial Bodoni Moda display typography (NAKA. / Coffee and Space).\n\nTwo typefaces carry the whole identity. Bodoni Moda sets the display voice, high-contrast and editorial; Archivo sets navigation, body copy, labels, tabular WhatsApp numbers, and controls. Surfaces stay flat with 1px hairlines and 0-2px corners, using a single functional box-shadow solely for :focus-visible. Owner-approved architectural concept photography, dummy WhatsApp numbers, and pending social/map links are disclosed honestly.",
+    "keyCharacteristics": [
+      "Official NAKA Coffee & Space SVG logo system (horizontal navbar/drawer lockup, stacked vertical plaque/footer lockup, cream-square favicon) with adaptive color rules",
+      "Calibrated burnt Terracotta palette sampled from the official logo (#BF5501, #8C3B00, #A34600, #7A3200, #E88432) dominating the Brand Profile bands while Charcoal and Cream stay primary structural grounds",
+      "Full-bleed atmospheric coffee-shop hero and visual-first Our Space mosaic with indoor/outdoor filter and native lightbox",
+      "Dedicated about.html page with a full-bleed Terracotta Brand Profile hero and four-swatch Material Character board",
+      "High-contrast serif display (Bodoni Moda) against plain workhorse sans (Archivo)",
+      "Flat planes, 1px hairline borders, near-square 0-2px corners, no decorative shadow",
+      "Charcoal footer integrating the stacked logo, terracotta hairline, #2E2824-on-cream social tiles, and split WhatsApp blocks"
+    ],
+    "rules": [
+      {
+        "name": "The Adaptive Logo Color Rule",
+        "body": "Use #BF5501 emblem + #8C3B00 wordmark on scrolled Cream headers, #E88432 emblem + #F4EEE7 wordmark on Charcoal (Mobile Menu & Footer), #F4EEE7 monochrome over unscrolled photo or terracotta heroes, and the official #BF5501 stacked logo inside a crisp #F4EEE7 Cream plaque on the Terracotta Brand Profile band.",
+        "section": "brand"
+      },
+      {
+        "name": "The Readable Terracotta Rule",
+        "body": "Base Fired Terracotta (#BF5501) is an emblem, surface swatch, and graphic accent only (4.04:1 on cream). Any terracotta body text or button fill on light grounds uses Terracotta Ink (#8C3B00, 6.65:1 on cream) or darker; terracotta accents on Charcoal use Terracotta Light (#E88432, 6.08:1); full-bleed Brand Profile bands use #A34600 to #7A3200 with Cream (#F4EEE7) text (5.31:1 to 7.98:1).",
+        "section": "colors"
+      },
+      {
+        "name": "The One Accent Rule",
+        "body": "Olive (#7C8655) appears at most once per material strip and never as a text color. Its scarcity is what makes it read as greenery rather than as a fifth brand color.",
+        "section": "colors"
+      },
+      {
+        "name": "The 12px Floor Rule",
+        "body": "Functional text never drops below 0.75rem (12px) at any breakpoint. Labels carry meaning here, so they stay readable rather than shrinking with the layout.",
+        "section": "typography"
+      },
+      {
+        "name": "The Display Is Not Body Rule",
+        "body": "Bodoni Moda is used for display, headline and lead only, including preserving the editorial NAKA. / Coffee and Space hero headline. Navigation, buttons, labels, numerals, and body paragraphs are Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Surfaces are flat at rest. The single shadow in the system exists only to make the focus ring visible against light, dark, and terracotta grounds, and it disappears the moment focus leaves.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Separation is a 1px line in the ink, light, or calibrated terracotta hairline color, never a shadow, never a blur. Lines and tonal bands are the system's depth cues.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the official NAKA SVG lockups (horizontal in header/drawer, stacked in Brand Profile plaque and footer, emblem favicon) with adaptive ground colors.",
+      "Do keep Charcoal (#211F1D) and Cream (#F4EEE7) as primary structural grounds while letting the #A34600 to #7A3200 Terracotta gradient own the Brand Profile sections on Home and About.",
+      "Do use Terracotta Ink (#8C3B00) for primary buttons and readable terracotta text on light grounds, and Terracotta Light (#E88432) on Charcoal; keep #BF5501 for logo emblem, swatches, and accents.",
+      "Do keep every surface flat and separate planes with a 1px hairline instead of a shadow.",
+      "Do hold functional text at 0.75rem (12px) or larger and touch targets at 44px or larger at every breakpoint.",
+      "Do label architectural concept visuals, dummy WhatsApp numbers, and pending links honestly.",
+      "Do verify every color pairing mathematically against WCAG AA luminance contrast."
+    ],
+    "donts": [
+      "Don't set small body text in base #BF5501 on Cream #F4EEE7 (4.04:1 fails AA for normal text).",
+      "Don't replace the Home Hero Bodoni Moda display headline (NAKA. / Coffee and Space) with a logo graphic.",
+      "Don't place #2E2824 social icons directly on Charcoal #211F1D without a Cream #F4EEE7 tile.",
+      "Don't invent an address, coordinates, map destination, Instagram URL, TikTok URL, official WhatsApp number, hours, menu, prices, history, facilities, or testimonials.",
+      "Don't use olive as a text color, or more than once per material strip.",
+      "Don't round corners beyond the 2px control radius, or introduce a pill shape.",
+      "Don't add decorative shadows, glows, glass effects, or em dashes in UI copy."
+    ]
+  }
+}
