@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <g opacity="0.20" fill="none" stroke="#F29B4B" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left: organic radiating botanical strokes -->
+    <path fill="#F29B4B" stroke="none" d="M38 92 C62 118 92 132 126 128 C114 152 92 162 64 146 C52 132 46 112 38 92 Z"/>
+    <path d="M24 78 C52 104 86 124 126 120 C186 114 278 78 334 90 C376 99 396 114 414 136"/>
+    <path d="M58 118 C36 164 -14 218 -12 280 C-10 326 16 356 52 378"/>
+    <path d="M96 132 C110 194 122 264 146 326 C162 366 182 392 208 412"/>
+    <path d="M114 134 C194 146 276 178 342 222 C366 238 382 254 398 274"/>
+
+    <!-- Top-center: curved droplet stroke, soft dot, and iconic NAKA spiral swirl -->
+    <path d="M582 -16 C562 12 548 44 542 76"/>
+    <ellipse cx="532" cy="148" rx="19" ry="18" transform="rotate(-14 532 148)" fill="#F29B4B" stroke="none"/>
+    <path d="M976 -20 C992 14 992 48 984 82 C970 146 926 198 866 198 C804 198 766 156 770 98 C774 38 810 10 860 10 C904 10 926 38 924 74 C922 108 900 130 868 130 C842 130 832 114 836 94"/>
+
+    <!-- Bottom-right: large nested concentric spiral arcs -->
+    <path d="M1112 486 C1138 352 1244 282 1364 294 C1418 299 1456 322 1484 358"/>
+    <path d="M1184 486 C1206 394 1280 348 1362 358 C1404 363 1436 382 1460 416"/>
+    <path d="M1256 486 C1272 436 1316 412 1362 422 C1384 427 1400 440 1410 462"/>
+  </g>
+</svg>
